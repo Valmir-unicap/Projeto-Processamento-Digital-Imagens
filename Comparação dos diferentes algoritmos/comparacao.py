@@ -34,7 +34,7 @@ def canny_edge_detection(image):
 
 def log_edge_detection(image):
     image_blur = cv2.GaussianBlur(image, (3, 3), 0)
-    cv2.Laplacian(image_blur, cv2.CV_64F)
+    lap = cv2.Laplacian(image_blur, cv2.CV_64F)
     return np.uint8(np.absolute(lap))
 
 def combine_edge_detection(image):
