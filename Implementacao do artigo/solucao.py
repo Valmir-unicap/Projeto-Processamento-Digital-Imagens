@@ -60,7 +60,7 @@ def combine_edge_detection(image):
     return combined
 
 def main():
-    image_path = '/content/digital.jpg'  # Update com o caminho correto da imagem
+    image_path = '/content/lena.png'  # Update com o caminho correto da imagem
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     if image is None:
