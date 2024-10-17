@@ -16,8 +16,8 @@
 
 # *Como fazer rodar o projeto*
 
-- abrir o cmd e baixar as duas bibliotecas essenciais para o projeto
-- dentro do cmd dar o comando pip install numpy
-- seguido de pip install opencv-python
+- Abrir o cmd e baixar as duas bibliotecas essenciais para o projeto
+- Dentro do cmd dar o comando pip install numpy
+- Seguido de pip install opencv-python
 - Apos seguir esses passos basta rodar o codigo em python na pasta
 - Dentro do cmd no diretorio onde esta o arquivo .py rode o comando python solucao.py
