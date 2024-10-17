@@ -12,3 +12,12 @@
 
 #### *Artigo:*
 - Deteção combinada de bordas (CED) para recuperação e classificação de imagens semelhantes
+
+
+# *Como fazer rodar o projeto*
+
+- abrir o cmd e baixar as duas bibliotecas essenciais para o projeto
+- dentro do cmd dar o comando pip install numpy
+- seguido de pip install opencv-python
+- Apos seguir esses passos basta rodar o codigo em python na pasta
+- Dentro do cmd no diretorio onde esta o arquivo .py rode o comando python solucao.py
