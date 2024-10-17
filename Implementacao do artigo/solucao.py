@@ -49,17 +49,18 @@ def combine_edge_detection(image):
     sobel_norm = cv2.normalize(sobel, None, 0, 255, cv2.NORM_MINMAX).astype(np.uint8)
     prewitt_norm = cv2.normalize(prewitt, None, 0, 255, cv2.NORM_MINMAX).astype(np.uint8)
     log_norm = cv2.normalize(log, None, 0, 255, cv2.NORM_MINMAX).astype(np.uint8)
+    canny_norm = canny.astype(np.uint8)
 
     # Combinar todas as bordas (usando soma ponderada ou média)
     combined = cv2.addWeighted(roberts_norm, 0.2, sobel_norm, 0.2, 0)
     combined = cv2.addWeighted(combined, 1, prewitt_norm, 0.2, 0)
     combined = cv2.addWeighted(combined, 1, log_norm, 0.2, 0)
-    combined = cv2.addWeighted(combined, 1, canny.astype(np.uint8), 0.2, 0)
+    combined = cv2.addWeighted(combined, 1, canny_norm, 0.2, 0)
 
     return combined
 
 def main():
-    image_path = '/content/lena.png'  # Update com o caminho correto da imagem
+    image_path = '/content/digital.jpg'  # Update com o caminho correto da imagem
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
     if image is None:
